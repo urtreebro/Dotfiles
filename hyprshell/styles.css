@@ -1,0 +1,80 @@
+@import "../colors/colors.css";
+
+:root {
+    --border-color: rgba(90, 90, 120, 0.4);
+    --border-color-active: rgba(239, 9, 139, 0.9);
+
+    --bg-color: alpha(@background, 0.5);
+    --bg-color-hover: rgba(40, 40, 50, 1);
+
+    --border-radius: 12px;
+    --border-size: 3px;
+    --border-style: solid;
+    --border-style-secondary: dashed;
+
+    --text-color: rgba(245, 245, 245, 1);
+
+    --window-padding: 2px;
+}
+
+.window {
+    background: transparent;
+    color: @foreground;
+}
+
+.window:hover {
+    background: transparent;
+    color: @foreground;
+}
+
+.monitor {
+    background: alpha(@background, 0.5);
+}
+
+.workspace {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.workspace.active {
+    border: 4px solid @pink;
+}
+
+.client {
+    background: alpha(@background, 0.7);
+}
+
+.client:hover{
+    background: alpha(@blue, 0.7);
+}
+
+.client-image {
+}
+
+
+.launcher {
+    opacity: 0;z
+}
+
+.launcher-input {
+    opacity: 0;
+}
+
+.launcher-results {
+}
+
+.launcher-item {
+}
+
+.launcher-exec {
+}
+
+.launcher-key {
+}
+
+.launcher-plugins {
+}
+
+.launcher-plugin {
+}

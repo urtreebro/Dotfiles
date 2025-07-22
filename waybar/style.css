@@ -1,0 +1,166 @@
+@import url('../colors/colors.css');
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent; /*rgba(21, 18, 27, 0)*/;
+    color: @foreground;/*#cdd6f4;*/
+}
+
+window#waybar.empty #window {  
+    background: none;  
+    border: none;
+}  
+
+tooltip {
+    background: @background;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @dark;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #a6adc8;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: @dark;
+    background: @green;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: @dark;
+    color: @foreground;
+    border-radius: 10px;
+}
+
+#power-profiles-daemon,
+#language,
+#custom-weather,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#backlight,
+#custom-notification-center {
+    background: @background;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 1px solid @border;
+}
+
+#temperature {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: @background;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#power-profiles-daemon {
+    color: @green;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#language {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: @pink;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#network {
+    color: @pink;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#bluetooth {
+    color: @blue; 
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px
+} 
+
+#pulseaudio {
+    color: @blue;
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+}
+
+#custom-notification-center {
+    border-radius: 0 10px 10px 0px;
+    margin-right: 10px;
+    border-left: 0;
+}
+
+#battery {
+    color: @green;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+    border-left: 0px;
+}
+
+#battery.warning {
+   color: @yellow;
+}
+
+#battery.critical {
+   color: @red;
+}
